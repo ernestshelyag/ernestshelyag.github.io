@@ -1,0 +1,175 @@
+.works
+	&__item
+		min-height: em(650)
+		position: relative
+		&_rem
+			img
+				&:first-child
+					width: em(700)
+					left: em(40)
+					top: em(120)
+					opacity: .9
+					border: 1px solid $dec2
+					+p(13,23,25,33)
+					z-index: 2
+				&:nth-child(2)
+					width: em(400)
+					left: em(670)
+					top: em(-40)
+					border: 7px solid $dec1
+					padding: em(20)
+		&_taxi
+			text-align: right
+			height: em(900)
+			img
+				&:first-child
+					width: em(600)
+					right: em(30)
+					top: em(80)
+					opacity: .9
+					border: 3px solid $dec1
+					+p(5,7,3,10)
+					z-index: 2
+				&:nth-child(2)
+					width: em(400)
+					right: em(670)
+					top: em(10)
+					border: 7px solid $dec1
+					padding: em(20)
+				&:nth-child(3)
+					width: em(400)
+					right: em(370)
+					top: em(400)
+					border: 4px solid $dec3
+					padding: em(20)
+					z-index: 3
+					&:hover
+						transform: scale(1.1)
+		&_rus
+			height: em(750)
+			img
+				&:first-child
+					width: em(700)
+					left: em(40)
+					top: em(90)
+					opacity: .9
+					border: 1px solid $dec2
+					padding: em(5)
+					z-index: 2
+				&:nth-child(2)
+					width: em(400)
+					left: em(790)
+					top: em(-150)
+					border: 7px solid $dec1
+					padding: em(20)
+		&_bit
+			text-align: center
+			height: em(1300)
+			img
+				opacity: 1
+				&:first-child
+					width: em(300)
+					left: em(30)
+					top: em(460)
+					opacity: .9
+					border: 3px solid $dec1
+					padding: em(5)
+					z-index: 2
+					&:hover
+						transform: scale(1.5)
+				&:nth-child(2)
+					width: em(600)
+					right: em(-30)
+					top: em(510)
+					border: 7px solid $dec1
+					padding: em(20)
+					z-index: 3
+					&:hover
+						transform: scale(1.1)
+				&:nth-child(3)
+					width: em(400)
+					right: em(30)
+					top: em(850)
+					border: 4px solid $dec3
+					padding: em(20)
+					z-index: 3
+					&:hover
+						transform: scale(1.35)
+						border: none
+				&:nth-child(4)
+					width: em(900)
+					left: 0
+					right: 0
+					margin: auto
+					top: em(90)
+					border: 2px solid $dec1
+					padding: em(10)
+				&:nth-child(5)
+					width: em(400)
+					left: em(50)
+					top: em(630)
+					padding: em(10)
+					right: em(0)
+				&:nth-child(6)
+					width: em(300)
+					left: em(400)
+					top: em(960)
+					border: 1px solid $dec1
+					padding: em(3)
+		&_3dlogo
+			img
+				width: em(600)
+				left: em(140)
+				top: em(100)
+				border: 3px solid $dec2
+				+p(5,9,5,3)
+				z-index: 2
+
+	&__content-block
+		margin-top: em(150)
+	&__description
+		display: block
+		font-size: em(30)
+	&__link
+
+	&__link-text
+		text-transform: uppercase
+		letter-spacing: em(5)
+		font-weight: 200
+		margin: em(6) 0 0 em(30)
+		display: block
+	&__img
+		position: absolute
+		opacity: .8
+		+tr
+		&:hover
+			opacity: 1!important
+	&__download-link
+		margin-left: em(10)
+
+.other-works
+	&__title
+		text-transform: uppercase
+		font-size: em(30)
+		margin-bottom: em(20, 30)
+		&_temp
+			display: block
+			margin-top: em(30)
+	&__item
+		margin-bottom: em(10)
+		font-size: em(18)
+		position: relative
+	&__link
+		padding-left: em(35)
+		span
+			padding-right: em(10)
+			+code-font
+	&__download-link
+		position: absolute
+		left: 0
+		top: 0
+		margin-right: em(20)
+
+
+
+

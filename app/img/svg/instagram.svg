@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewbox="0 0 22 22">
+            <style>#instagram { fill-rule: evenodd; fill: url(#linear-gradient); }</style>
+            <lineargradient id="linear-gradient" x1="1136.77" y1="695" x2="1155.23" y2="673" gradientunits="userSpaceOnUse">
+              <stop offset="0" stop-color="#b7710e"></stop>
+              <stop offset="0.444" stop-color="#f10e0e"></stop>
+              <stop offset="1" stop-color="#c522a8"></stop>
+            </lineargradient>
+            <path id="instagram" d="M1143,673h6a8,8,0,0,1,8,8v6a8,8,0,0,1-8,8h-6a8,8,0,0,1-8-8v-6A8,8,0,0,1,1143,673Zm1,1h4a8,8,0,0,1,8,8v4a8,8,0,0,1-8,8h-4a8,8,0,0,1-8-8v-4A8,8,0,0,1,1144,674Zm7,3a1,1,0,1,1-1,1A1,1,0,0,1,1151,677Zm-5,1.867a5.133,5.133,0,1,1-5.13,5.133A5.127,5.127,0,0,1,1146,678.867Zm0,1.466a3.667,3.667,0,1,1-3.67,3.667A3.667,3.667,0,0,1,1146,680.333Z" transform="translate(-1135 -673)"></path>
+          </svg>

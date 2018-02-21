@@ -1,0 +1,33 @@
+.title
+	font-size: em(80)
+	font-weight: 100
+	text-transform: uppercase
+	span
+		color: $main-color
+		font-weight: 200
+
+.download-link
+	border-bottom: 1px solid $blue
+	width: 16px
+	height: 16px
+	+psevdo
+	&:before
+		+zero
+		width: 6px
+		height: 6px
+		transform: rotate(45deg)
+		border-right: 1px solid $blue
+		border-bottom: 1px solid $blue
+	&:after
+		left: 0
+		right: 0
+		top: 0
+		margin: auto
+		width: 1px
+		height: 8px
+		background: $blue
+	&:hover
+		border: 1px solid $main-color
+
+.let
+	color: $main-color

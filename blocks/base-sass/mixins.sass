@@ -1,0 +1,109 @@
+$browser-context: 16 // Default
+
+@function em($pixels, $context: $browser-context)
+  @return #{$pixels/$context}em
+
+=r($width)
+  @media only screen and (max-width: $width+ px)
+    @content
+
+=rmin($width)
+  @media only screen and (min-width: $width+ px)
+    @content
+
+=wrp
+  max-width: 1240px
+  margin: 0 auto
+  padding: 0 50px
+  +r(1024)
+    max-width: 958px
+    padding: 0 15px
+
+=b
+  border: solid 1px red
+=bb
+  border: solid 1px blue
+
+=zero
+  top: 0
+  bottom: 0
+  right: 0
+  left: 0
+  margin: auto
+
+=vcenter
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
+
+=hover
+  .no-touch &:hover
+    @content
+
+=psevdo
+  position: relative
+  &:before,&:after
+    content: ' '
+    position: absolute
+
+=tr
+  transition: all .3s ease
+
+=flex
+  display: flex
+  justify-content: space-between
+
+=blur($what)
+  -webkit-filter: blur($what+ px)
+  filter: blur($what+ px)
+
+=placeholder-color($color)
+  &::-webkit-input-placeholder  /* WebKit browsers */
+      color: $color
+      opacity: .5
+  &:-moz-placeholder  /* Mozilla Firefox 4 to 18 */
+      color: $color
+      opacity: .5
+  &::-moz-placeholder  /* Mozilla Firefox 19+ */
+      color: $color
+      opacity: .5
+  &:-ms-input-placeholder  /* Internet Explorer 10+ */
+      color: $color
+      opacity: .5
+
+=p($kote1: 0, $kote2: 0, $kote3: 0, $kote4: 0)
+  padding: em($kote1) em($kote2) em($kote3) em($kote4)
+
+.visually-hidden
+  position: absolute
+  width: 1px
+  height: 1px
+  overflow: hidden
+  clip: rect(0 0 0 0)
+
+.wrp
+  +wrp
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

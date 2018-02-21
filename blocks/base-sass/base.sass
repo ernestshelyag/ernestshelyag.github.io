@@ -1,0 +1,62 @@
+*, *:before, *:after
+  box-sizing: border-box
+  -moz-box-sizing: border-box
+
+*::selection
+  background: rgba($main-color-darker,.3)
+  color: $font-color
+
+html
+  -webkit-text-size-adjust: none
+  text-size-adjust: none
+  font-size: 16px
+
+html::-webkit-scrollbar
+  width: 0
+
+body
+  +lato
+  font-weight: 400
+  color: $font-color
+  background-color: $bg-color
+  letter-spacing: em(.7)
+  position: relative
+  min-width: 320px
+  font-weight: 300
+
+a
+  display: inline-block
+  transition: all .3s ease-in
+  color: $font-color
+  text-decoration: none
+  +tr
+  cursor: pointer
+
+p
+  line-height: 1.3
+  font-size: em(15)
+  letter-spacing: em(1.5)
+  +serif
+  text-indent: em(30, 15)
+  font-weight: 100
+  margin: em(60, 15) 0
+
+button
+  background: transparent
+  border: 0
+  color: $font-color
+  cursor: pointer
+  +lato
+
+input[type="text"],
+input[type="submit"],
+input[type="button"],
+input[type="email"],
+input[type="password"],
+select,
+textarea
+  appearance: none
+  outline: 0
+  +lato
+
++placeholder-color($font-color)
