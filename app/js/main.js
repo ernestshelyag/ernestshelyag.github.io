@@ -1,7 +1,7 @@
-$('.exp-list__btn').on('click', function(){
-	$('.exp-list__btn').toggleClass('active');
-	$('.exp-list__content').toggleClass('active');
-});
+// $('.exp-list__btn').on('click', function(){
+// 	$('.exp-list__btn').toggleClass('active');
+// 	$('.exp-list__content').toggleClass('active');
+// });
 
 function randCustom (min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
