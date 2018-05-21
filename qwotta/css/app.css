@@ -123,7 +123,7 @@ button {
   opacity: .5; }
 
 .wrp {
-  max-width: 1260px;
+  max-width: 1340px;
   margin: 0 auto;
   padding: 0 40px; }
 
@@ -141,6 +141,12 @@ button {
 
 .underline:hover:before {
   width: 100%; }
+
+.bold {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 2px; }
 
 .header {
   width: 100%;
@@ -509,10 +515,7 @@ button {
   -ms-flex-align: center;
   align-items: center; }
   .registration__title {
-    margin-top: 55px;
-    font-weight: 500;
-    font-size: 24px;
-    text-transform: uppercase; }
+    margin-top: 55px; }
   .registration__text {
     margin-bottom: 20px; }
   .registration__form {
@@ -548,11 +551,7 @@ button {
     font-weight: 500;
     letter-spacing: 2px; }
   .registration__city {
-    margin-top: 20px;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 24px;
-    letter-spacing: 2px; }
+    margin-top: 20px; }
   .registration__search {
     margin-bottom: 20px;
     color: #fff;
@@ -565,10 +564,6 @@ button {
 .country-list {
   text-align: center; }
   .country-list__title {
-    text-transform: uppercase;
-    font-size: 24px;
-    font-weight: 500;
-    letter-spacing: 2px;
     margin: 53px 0 60px; }
     .country-list__title:before {
       width: 60px;
@@ -598,7 +593,80 @@ button {
     margin: 0 10px; }
     .country-list__link:hover {
       color: #00CF99; }
-    @media only screen and (max-width: 768px) {
+
+.collage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .collage__lev {
+    height: 380px;
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .collage__lev:first-child {
+      margin-top: 0; }
+  .collage__item_1 {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    background-image: url("../img/main-cities/1.jpg"); }
+  .collage__item_2 {
+    width: 380px;
+    margin-left: 20px;
+    background-image: url("../img/main-cities/2.jpg"); }
+  .collage__item_3 {
+    width: 380px;
+    background-image: url("../img/main-cities/3.jpg"); }
+  .collage__item_4 {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    background-image: url("../img/main-cities/4.jpg"); }
+  .collage__item_5 {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    margin-top: 20px;
+    background-image: url("../img/main-cities/5.jpg"); }
+  .collage__item_6 {
+    width: 380px;
+    background-image: url("../img/main-cities/6.jpg"); }
+  .collage__item_7 {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    margin-left: 20px;
+    background-image: url("../img/main-cities/7.jpg"); }
+  .collage__form-block {
+    background: #00CF99;
+    width: 380px;
+    margin-left: 20px; }
+  .collage__psevdo-block {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    margin-left: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .collage__link-all {
+    background: #00CF99;
+    color: #fff;
+    margin: 70px auto;
+    padding: 18px 0;
+    width: 377px;
+    text-align: center;
+    border-radius: 50px; }
+  @media only screen and (max-width: 768px) {
     .wrp {
       max-width: 688px;
       padding: 0; } }
