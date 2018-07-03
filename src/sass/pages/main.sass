@@ -1,0 +1,182 @@
+.main-page
+
+.hero
+  color: #fff
+  position: relative
+  height: 100vh
+  margin-top: -50px
+  background-image: url("../img/bg.jpg")
+  +bg-center
+  &__mask
+    +absolute-cover
+    background: linear-gradient(to top,rgba(#333, .7), rgba(#000, .9))
+    z-index: 5
+  &__cont
+    +vcenter
+    z-index: 10
+  &__title
+    font-size: 60px
+    text-transform: uppercase
+    letter-spacing: 5px
+    margin-bottom: 30px
+  &__text
+    letter-spacing: 1px
+  &__btn
+    margin-top: 30px
+    border: solid 2px #ffffff
+    padding: 10px 40px 10px 20px
+    border-radius: 5px
+    color: #fff
+    text-transform: uppercase
+    font-weight: 600
+    letter-spacing: 2px
+    +psevdo
+    &:before
+      width: 10px
+      height: 10px
+      border-bottom: solid 3px #fff
+      border-left: solid 3px #fff
+      transform: rotate(-45deg)
+      right: 20px
+      top: 10px
+    &:hover
+      background: rgba(#fff, .2)
+
+.portfolio
+
+  &__title
+    text-align: center
+  +r-pad(40)
+  min-height: 100vh
+  background: #eee
+  &__arrs
+    +flex
+    width: 100px
+    margin: 20px auto
+    img
+      cursor: pointer
+  &__slider
+    margin: auto
+    overflow: hidden
+
+  &__slide
+    height: 30vh
+    border-radius: 5px
+    overflow: hidden
+  &__slide-link
+    height: 100%
+
+    &:hover
+      svg, span
+        opacity: 1
+    figure
+      width: 100%
+      height: 100%
+      position: relative
+      svg
+        width: 20px
+        height: 20px
+        fill: #fff
+        +vcenter
+        opacity: 0
+        z-index: 20
+        +tr
+      span
+        +tr
+        +absolute-cover
+        opacity: 0
+        background: $bg-filter
+        z-index: 10
+
+.about-me
+  background: #eee
+  +r-pad(0, 40)
+  &__title
+    text-align: center
+    margin-bottom: 40px
+  &__list
+    width: 50%
+    margin: auto
+  &__item
+    margin: 5px
+    padding: 5px
+    border-radius: 5px
+    background: #fff
+    +flex
+  &__name
+    padding-left: 20px
+    font-size: 30px
+    font-weight: 600
+  &__p-block
+    position: relative
+    width: 200px
+    border: solid 1px $font-col
+    margin-right: 10px
+    text-align: center
+    overflow: hidden
+
+  &__decor
+    position: absolute
+    top: 0
+    left: 0
+    height: 100%
+    background: $bg-filter
+    &_html
+      width: 95%
+    &_css
+      width: 80%
+    &_pug
+      width: 90%
+    &_bem
+      width: 99%
+    &_sass
+      width: 95%
+    &_bootstrap
+      width: 50%
+    &_js
+      width: 20%
+    &_jq
+      width: 80%
+    &_php
+      width: 5%
+    &_vue
+      width: 30%
+    &_react
+      width: 20%
+    &_gulp
+      width: 90%
+    &_webpack
+      width: 20%
+    &_three
+      width: 20%
+    &_git
+      width: 99%
+    &_node
+      width: 30%
+    &_wp
+      width: 20%
+    &_backend
+      width: 10%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

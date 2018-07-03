@@ -1,0 +1,199 @@
+extends ../template
+
+block variables
+    - var title = 'Main'
+
+block content
+
+    include ../../components/header/header
+
+    +b.MAIN.main-page.main
+        +b.hero
+            +e.SPAN.mask
+            +e.cont
+                +e.H1.title
+                    | Эрнест Шеляг
+                    br
+                    | Сайт-Портфолио
+                +e.P.text Здесь Вы сможете найти всю необходимую информацию обо мне. Если остануться вопросы, свяжитесь со мной удобным Вам способом.
+                +e.A.btn(href="#portfolio" data-target="anchor") Посмотреть работы
+        +b.portfolio#portfolio
+            +e.wrp.wrp
+                +e.H1.title.h1 Портфолио
+                +e.arrs
+                    +e.btn-prev
+                        img(src="img/arr-prev.svg")
+                    +e.btn-next
+                        img(src="img/arr-next.svg")
+                +e.slider
+                    .swiper-wrapper
+                        +e.slide.swiper-slide
+                            +e.A.slide-link(href="#fregat")
+                                figure
+                                    img(src="img/fregat.jpg")
+                                    +e.SPAN.mask
+                                    +icon("loup")
+                        +e.slide.swiper-slide
+                            +e.A.slide-link(href="#shust")
+                                figure
+                                    img(src="img/shust.jpg")
+                                    +e.SPAN.mask
+                                    +icon("loup")
+                        +e.slide.swiper-slide
+                            +e.A.slide-link(href="#coin")
+                                figure
+                                    img(src="img/coin.jpg")
+                                    +e.SPAN.mask
+                                    +icon("loup")
+                        +e.slide.swiper-slide
+                            +e.A.slide-link(href="#taxi")
+                                figure
+                                    img(src="img/taxi.jpg")
+                                    +e.SPAN.mask
+                                    +icon("loup")
+                        +e.slide.swiper-slide
+                            +e.A.slide-link(href="#sept")
+                                figure
+                                    img(src="img/sept.jpg")
+                                    +e.SPAN.mask
+                                    +icon("loup")
+                        +e.slide.swiper-slide
+                            +e.A.slide-link(href="#rus")
+                                figure
+                                    img(src="img/rus.jpg")
+                                    +e.SPAN.mask
+                                    +icon("loup")
+                        +e.slide.swiper-slide
+                            +e.A.slide-link(href="#sea")
+                                figure
+                                    img(src="img/sea.jpg")
+                                    +e.SPAN.mask
+                                    +icon("loup")
+                        +e.slide.swiper-slide
+                            +e.A.slide-link(href="#opetta")
+                                figure
+                                    img(src="img/opetta.jpg")
+                                    +e.SPAN.mask
+                                    +icon("loup")
+                        +e.slide.swiper-slide
+                            +e.A.slide-link(href="#rem")
+                                figure
+                                    img(src="img/rem.jpg")
+                                    +e.SPAN.mask
+                                    +icon("loup")
+                        +e.slide.swiper-slide
+                            +e.A.slide-link(href="#logo")
+                                figure
+                                    img(src="img/logo.jpg")
+                                    +e.SPAN.mask
+                                    +icon("loup")
+                        +e.slide.swiper-slide
+                            +e.A.slide-link(href="#fit")
+                                figure
+                                    img(src="img/fit.jpg")
+                                    +e.SPAN.mask
+                                    +icon("loup")
+                        +e.slide.swiper-slide
+                            +e.A.slide-link(href="#ajax")
+                                figure
+                                    img(src="img/ajax.jpg")
+                                    +e.SPAN.mask
+                                    +icon("loup")
+        +b.about-me
+            +e.H1.title.h1 Как я оцениваю свои навыки
+            +e.wrp.wrp
+                +e.UL.list
+                    +e.LI.item
+                        +e.SPAN.name html
+                        +e.p-block
+                            +e.SPAN.num 95%
+                            +e.SPAN.decor_html
+                    +e.LI.item
+                        +e.SPAN.name pug
+                        +e.p-block
+                            +e.SPAN.num 90%
+                            +e.SPAN.decor_pug
+                    +e.LI.item
+                        +e.SPAN.name bem
+                        +e.p-block
+                            +e.SPAN.num 99%
+                            +e.SPAN.decor_bem
+                    +e.LI.item
+                        +e.SPAN.name css
+                        +e.p-block
+                            +e.SPAN.num 80%
+                            +e.SPAN.decor_css
+                    +e.LI.item
+                        +e.SPAN.name sass
+                        +e.p-block
+                            +e.SPAN.num 95%
+                            +e.SPAN.decor_sass
+                    +e.LI.item
+                        +e.SPAN.name bootstrap
+                        +e.p-block
+                            +e.SPAN.num 50%
+                            +e.SPAN.decor_bootstrap
+                    +e.LI.item
+                        +e.SPAN.name Java Script
+                        +e.p-block
+                            +e.SPAN.num 20%
+                            +e.SPAN.decor_js
+                    +e.LI.item
+                        +e.SPAN.name jQuery
+                        +e.p-block
+                            +e.SPAN.num 80%
+                            +e.SPAN.decor_jq
+                    +e.LI.item
+                        +e.SPAN.name php
+                        +e.p-block
+                            +e.SPAN.num 5%
+                            +e.SPAN.decor_php
+                    +e.LI.item
+                        +e.SPAN.name vue.js
+                        +e.p-block
+                            +e.SPAN.num 30%
+                            +e.SPAN.decor_vue
+                    +e.LI.item
+                        +e.SPAN.name react
+                        +e.p-block
+                            +e.SPAN.num 20%
+                            +e.SPAN.decor_react
+                    +e.LI.item
+                        +e.SPAN.name gulp
+                        +e.p-block
+                            +e.SPAN.num 90%
+                            +e.SPAN.decor_gulp
+                    +e.LI.item
+                        +e.SPAN.name webpack
+                        +e.p-block
+                            +e.SPAN.num 20%
+                            +e.SPAN.decor_webpack
+                    +e.LI.item
+                        +e.SPAN.name web-gl (three.js)
+                        +e.p-block
+                            +e.SPAN.num 20%
+                            +e.SPAN.decor_three
+                    +e.LI.item
+                        +e.SPAN.name git
+                        +e.p-block
+                            +e.SPAN.num 99%
+                            +e.SPAN.decor_git
+                    +e.LI.item
+                        +e.SPAN.name node.js
+                        +e.p-block
+                            +e.SPAN.num 30%
+                            +e.SPAN.decor_node
+                    +e.LI.item
+                        +e.SPAN.name wordpress
+                        +e.p-block
+                            +e.SPAN.num 20%
+                            +e.SPAN.decor_wp
+                    +e.LI.item
+                        +e.SPAN.name backend
+                        +e.p-block
+                            +e.SPAN.num 10%
+                            +e.SPAN.decor_backend
+
+    include ../../components/footer/footer
+
+

@@ -1,0 +1,101 @@
+// titles
+
+.h1, .h2, .h3, .h4
+  display: block
+  color: $font-col
+  font-weight: bold
+  line-height: 1.1
+
+.h1
+  font-size: 40px
+  +rw
+    font-size: 30px
+  +rm
+    font-size: 24px
+
+.h2
+  font-size: 30px
+  +rn
+    font-size: 24px
+
+.h3
+  font-size: 24px
+  +rn
+    font-size: 18px
+
+.h4
+  font-size: 18px
+  +rn
+    font-size: 16px
+
+// svg-sprite
+
+// breadcrumbs
+
+.breadcrumbs
+  padding: 39px 0 22px
+  +rt
+    padding: 20px 0 10px
+  a
+    font-size: 16px
+    text-decoration: none
+    color: $font-col
+  i
+    padding-right: 5px
+    color: $font-col
+
+// elements
+
+.arrs
+  user-select: none
+  +flex
+  width: 80px
+  img
+    cursor: pointer
+
+=shadow
+  box-shadow: 0 8px 10px 0 rgba(255, 74, 25, 0.25)
+
+
+.btn
+  height: 45px
+  background: $main-col
+  color: #fff
+  border-radius: 50px
+  display: flex
+  align-items: center
+  justify-content: center
+  font-size: 14px
+  text-transform: uppercase
+  font-weight: bold
+  width: 225px
+  text-decoration: none
+  padding: 0 10px
+  &:hover
+    +shadow
+    color: #fff
+  &:active
+    background: $main-col-dark
+    +shadow
+  &_white
+    border: solid 2px $main-col
+    background: #fff
+    color: $main-col
+    &:hover
+      box-shadow: none
+      background: $main-col
+      color: #fff
+    &:active
+      background: $main-col-dark
+
+
+// form
+
+.inp
+  height: 45px
+  background: #fff
+  border-radius: 50px
+  width: 225px
+  padding: 0 10px 0 30px
+  &.form-err
+    border: solid 1px $main-col

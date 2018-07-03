@@ -1,0 +1,130 @@
+.portfolio-modal
+  padding: 5px
+  &__cont
+
+    padding: 5px
+    border: solid 2px $font-col
+    border-radius: 5px
+    display: flex
+
+  &__img-block
+    width: 70%
+    figure
+      border-radius: 5px
+      overflow: hidden
+      height: 100%
+
+  &__info-block
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    width: 30%
+    padding: 10px 20px
+  &__title
+    font-weight: bold
+    font-size: 30px
+  &__link
+    display: block
+    font-size: 30px
+    color: $main-col
+    font-weight: 600
+    text-decoration: underline
+    margin-top: 10px
+
+
+
+
+
+.modal
+  max-width: 450px
+  margin: 0 auto
+  position: relative
+  border-radius: 5px
+  background: #fff
+  &.p-modal
+    max-width: 950px
+    background: #eee
+  &__cont
+    padding: 5px
+  &__box
+    padding: 40px
+    text-align: center
+    border: solid 2px $font-col
+    border-radius: 5px
+  &__title
+    margin-bottom: 20px
+    line-height: 1.2
+  &__text
+    line-height: 1.4
+    padding-bottom: 20px
+  &__lil-title
+    display: block
+    color: $main-col
+    margin-bottom: 10px
+    font-size: 20px
+    font-weight: 600
+    &_phone
+      font-size: 30px
+  &__copy
+    +tr
+    border: solid 2px $font-col
+    border-radius: 5px
+    &.active
+      background: rgba(43, 232, 43, 0.37)
+  &__link
+    svg
+      width: 60px
+      height: 60px
+      fill: #007aff
+      animation: infinite 3s pulse
+
+@keyframes pulse
+  from
+    transform: scale(1)
+  10%
+    transform: scale(1.15)
+  20%
+    transform: scale(1)
+  to
+    transform: scale(1)
+
+// mfp
+
+.my-mfp-animate .mfp-close
+  font-size: 50px
+  color: #fff
+  top: -35px
+  right: -35px
+  opacity: 1
+
+.mfp-bg
+  background: $bg-filter
+
+// popup animation
+
+.my-mfp-animate .modal
+  opacity: 0
+  transform: scale(.8)
+  +tr
+
+.my-mfp-animate.mfp-ready .modal
+  opacity: 1
+  transform: scale(1)
+
+.my-mfp-animate.mfp-removing .modal
+  opacity: 0
+  transform: scale(.8)
+
+// bg animation
+
+.my-mfp-animate.mfp-bg
+  opacity: 0
+  transition: opacity .3s ease-out
+
+.my-mfp-animate.mfp-ready.mfp-bg
+  opacity: 1
+
+.my-mfp-animate.mfp-removing.mfp-bg
+  opacity: 0
+
+

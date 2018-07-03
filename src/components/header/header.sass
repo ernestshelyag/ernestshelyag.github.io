@@ -1,0 +1,58 @@
+.header
+  &.black
+    a
+      color: $font-col
+    svg
+      fill: $font-col
+    .hh
+      color: $font-col
+    .header__logo-text
+      color: $font-col
+  z-index: 100
+  &__cont
+    +flex
+    height: 50px
+
+  &__logo-text
+    font-family: 'Rock Salt', cursive
+    font-size: 20px
+    color: #fff
+
+  &__nav-link
+    font-weight: bold
+    font-size: 14px
+    text-transform: uppercase
+    margin: 0 10px
+    color: #fff
+    letter-spacing: 2px
+    &:hover
+      transform: rotateZ(3deg)
+      animation: forwards .3s derg
+
+  &__list
+    display: flex
+    align-items: center
+
+  &__item
+    margin-left: 10px
+    svg
+      fill: #fff
+      fill-rule: evenodd
+      width: 20px
+      height: 20px
+    .hh
+      font-size: 20px
+      color: #fff
+      font-weight: 600
+    .phone
+      height: 18px
+
+@keyframes derg
+  from
+    transform: rotateZ(0)
+  50%
+    transform: rotateZ(3deg)
+  to
+    transform: rotateZ(0)
+
+

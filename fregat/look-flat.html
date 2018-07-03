@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Look</title>
+    <meta content="" name="author">
+    <meta content="" name="description">
+    <!--base(target='_blank')-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="format-detection" content="telephone=no">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png"><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+    <link rel="stylesheet" href="css/vendors.min.css">
+    <link rel="stylesheet" href="css/app.min.css">
+  </head>
+  <body><!--[if lt IE 8]>
+    <p style="padding: 20px; position: fixed; background: #fff; font-size: 20px;">
+      Вы используете старую версию браузера.
+      Пожалуйста<a href="http://browsehappy.com/" style="padding: 0 5px; font-weight: bold; text-transform: uppercase; color: blue;" target="_self">обновите ваш браузер</a>перейдя по ссылке.
+    </p><![endif]--><span id="preloader"></span>
+    <header class="header col-sky">
+      <div class="header__wrp wrp">
+        <div class="header__logo-block"><a class="header__logo-link" href="/"><img class="header__img" src="img/logo-text.png" alt="" role="presentation"/><img class="header__img header__img_no-text" src="img/logo.png" alt="" role="presentation"/></a>
+        </div>
+        <div class="header__nav-block">
+          <div class="header-top">
+            <nav class="header-top__nav">
+              <ul class="header-top__list">
+                <li class="header-top__item header-top__item_phone"><a href="tel:84232025009">8 (423) 202-50-09</a>
+                </li>
+                <li class="header-top__item header-top__item_link"><a href="about.html">О нас</a>
+                </li>
+                <li class="header-top__item header-top__item_link"><a href="ipoteka.html">Ипотека</a>
+                </li>
+                <li class="header-top__item header-top__item_link"><a href="shares.html">Акции</a>
+                </li>
+                <li class="header-top__item header-top__item_link"><a href="partners.html">Партнёры</a>
+                </li>
+                <li class="header-top__item header-top__item_link"><a href="questions.html">Вопрос-ответ</a>
+                </li>
+                <li class="header-top__item header-top__item_link"><a href="review-page.html">Отзывы</a>
+                </li>
+                <li class="header-top__item header-top__item_link"><a href="blog.html">Блог</a>
+                </li>
+                <li class="header-top__item header-top__item_link"><a href="news-page.html">Новости</a>
+                </li>
+                <li class="header-top__item header-top__item_link"><a href="contacts-page.html">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="header-top__list">
+              <li class="header-top__item header-top__item_social"><a href="#">
+                  <svg class="insta">
+                    <use xlink:href="img/sprite.svg#insta"></use>
+                  </svg></a>
+              </li>
+              <li class="header-top__item header-top__item_social"><a href="#">
+                  <svg class="fb">
+                    <use xlink:href="img/sprite.svg#fb"></use>
+                  </svg></a>
+              </li>
+              <li class="header-top__item header-top__item_social"><a href="#">
+                  <svg class="vk">
+                    <use xlink:href="img/sprite.svg#vk"></use>
+                  </svg></a>
+              </li>
+              <li class="header-top__item header-top__item_social"><a href="#">
+                  <svg class="ok">
+                    <use xlink:href="img/sprite.svg#ok"></use>
+                  </svg></a>
+              </li>
+            </ul>
+          </div>
+          <div class="header-bottom">
+            <nav class="header-bottom__nav">
+              <ul class="header-bottom__list">
+                <li class="header-bottom__item"><a href="about-fregat.html">О ЖК Фрегат</a>
+                </li>
+                <li class="header-bottom__item"><a href="look-flat.html">Посмотреть квартиры</a>
+                </li>
+                <li class="header-bottom__item"><a href="course-page.html">Ход строительства</a>
+                </li>
+                <li class="header-bottom__item"><a href="buy.html">Как купить</a>
+                </li>
+                <li class="header-bottom__item header-bottom__item_phone"><a href="tel:84232025009">8 (423) 202-50-09</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="burger"><a class="burger__btn" id="burger-btn">
+          <div class="burger__lines-block"><span class="burger__mid-line"></span>
+          </div></a>
+        </div>
+        <div class="sidebar">
+          <div class="sidebar__cont">
+            <ul class="sidebar__list">
+              <li class="sidebar__li item"><a class="sidebar__link" href="/">Главная</a>
+              </li>
+              <li class="sidebar__li item"><a class="sidebar__link" href="about.html">О нас</a>
+              </li>
+              <li class="sidebar__li item"><a class="sidebar__link" href="ipoteka.html">Ипотека</a>
+              </li>
+              <li class="sidebar__li item"><a class="sidebar__link" href="shares.html">Акции</a>
+              </li>
+              <li class="sidebar__li item"><a class="sidebar__link" href="partners.html">Партнёры</a>
+              </li>
+              <li class="sidebar__li item"><a class="sidebar__link" href="questions.html">Вопрос-ответ</a>
+              </li>
+              <li class="sidebar__li item"><a class="sidebar__link" href="review-page.html">Отзывы</a>
+              </li>
+              <li class="sidebar__li item"><a class="sidebar__link" href="blog.html">Блог</a>
+              </li>
+              <li class="sidebar__li item"><a class="sidebar__link" href="news-page.html">Новости</a>
+              </li>
+              <li class="sidebar__li item"><a class="sidebar__link" href="contacts-page.html">Контакты</a>
+              </li>
+              <li class="sidebar__li item"><a class="sidebar__link" href="about-fregat.html">О ЖК Фрегат</a>
+              </li>
+              <li class="sidebar__li item"><a class="sidebar__link" href="look-flat.html">Посмотреть квартиры</a>
+              </li>
+              <li class="sidebar__li item"><a class="sidebar__link" href="course-page.html">Ход строительства</a>
+              </li>
+              <li class="sidebar__li item"><a class="sidebar__link" href="buy.html">Как купить</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="look-flat main" role="main">
+      <div class="look-flat__wrp wrp">
+        <div class="breadcrumbs"><a href="/">Главная</a><i>/</i><a>Посмотреть квартиры</a>
+        </div>
+        <div class="look-flat__title h1">Посмотреть квартиры
+        </div>
+        <p class="look-flat__text">Квартиры в ЖК Фрегат 2 отличаются удобной и продуманной планировкой. Увеличенный световой фронт, оптимальные площади для жильцов, зонирование помещений под собственные нужды.
+        </p>
+        <div class="look-flat__tabs-block">
+          <ul class="look-flat__tab-list">
+            <li class="look-flat__tab-item active" data-tab-fade="1">Однокомнатные квартиры
+            </li>
+            <li class="look-flat__tab-item" data-tab-fade="2">Двухкомнатные квартиры
+            </li>
+            <li class="look-flat__tab-item" data-tab-fade="3">Квартиры-студии
+            </li>
+            <li class="look-flat__tab-item" data-tab-fade="4">Квартиры с отделкой
+            </li>
+            <li class="look-flat__tab-item" data-tab-fade="5">Эксклюзивные планировки
+            </li>
+          </ul>
+        </div>
+        <div class="look-flat__content-block">
+          <div class="look-flat__cont active" data-content-fade="1">
+            <div class="look-flat__block">
+                  <div class="look-flat__item"><a class="look-flat__img-block img-modal" href="img/works-big.jpg"><img src="img/works-small.jpg"><span class="look-flat__mask"></span>
+                    <svg class="loup">
+                      <use xlink:href="img/sprite.svg#loup"></use>
+                    </svg></a>
+                    <div class="look-flat__info-block">
+                      <div class="look-flat__item-title">дом №1
+                      </div>
+                      <div class="look-flat__box">
+                        <div class="look-flat__box-item">
+                          <div class="look-flat__lil-title">Площадь
+                          </div><span class="look-flat__value">65.2 м2 - 85.2 м2</span>
+                        </div>
+                        <div class="look-flat__box-item">
+                          <div class="look-flat__lil-title">Цена
+                          </div><span class="look-flat__value">10 256 280 руб.</span>
+                        </div>
+                      </div><a class="look-flat__item-btn btn btn_white simple-modal" href="#flat-modal-1">Подробнее о квартирах</a>
+                    </div>
+                  </div>
+                  <div class="look-flat__item"><a class="look-flat__img-block img-modal" href="img/works-big.jpg"><img src="img/works-small.jpg"><span class="look-flat__mask"></span>
+                    <svg class="loup">
+                      <use xlink:href="img/sprite.svg#loup"></use>
+                    </svg></a>
+                    <div class="look-flat__info-block">
+                      <div class="look-flat__item-title">дом №1
+                      </div>
+                      <div class="look-flat__box">
+                        <div class="look-flat__box-item">
+                          <div class="look-flat__lil-title">Площадь
+                          </div><span class="look-flat__value">65.2 м2 - 85.2 м2</span>
+                        </div>
+                        <div class="look-flat__box-item">
+                          <div class="look-flat__lil-title">Цена
+                          </div><span class="look-flat__value">10 256 280 руб.</span>
+                        </div>
+                      </div><a class="look-flat__item-btn btn btn_white simple-modal" href="#flat-modal-1">Подробнее о квартирах</a>
+                    </div>
+                  </div>
+                  <div class="look-flat__item"><a class="look-flat__img-block img-modal" href="img/works-big.jpg"><img src="img/works-small.jpg"><span class="look-flat__mask"></span>
+                    <svg class="loup">
+                      <use xlink:href="img/sprite.svg#loup"></use>
+                    </svg></a>
+                    <div class="look-flat__info-block">
+                      <div class="look-flat__item-title">дом №1
+                      </div>
+                      <div class="look-flat__box">
+                        <div class="look-flat__box-item">
+                          <div class="look-flat__lil-title">Площадь
+                          </div><span class="look-flat__value">65.2 м2 - 85.2 м2</span>
+                        </div>
+                        <div class="look-flat__box-item">
+                          <div class="look-flat__lil-title">Цена
+                          </div><span class="look-flat__value">10 256 280 руб.</span>
+                        </div>
+                      </div><a class="look-flat__item-btn btn btn_white simple-modal" href="#flat-modal-1">Подробнее о квартирах</a>
+                    </div>
+                  </div>
+            </div>
+          </div>
+          <div class="look-flat__cont" data-content-fade="2">
+            <div class="look-flat__block">
+                  <div class="look-flat__item"><a class="look-flat__img-block img-modal" href="img/works-big.jpg"><img src="img/works-small.jpg"><span class="look-flat__mask"></span>
+                    <svg class="loup">
+                      <use xlink:href="img/sprite.svg#loup"></use>
+                    </svg></a>
+                    <div class="look-flat__info-block">
+                      <div class="look-flat__item-title">дом №1
+                      </div>
+                      <div class="look-flat__box">
+                        <div class="look-flat__box-item">
+                          <div class="look-flat__lil-title">Площадь
+                          </div><span class="look-flat__value">65.2 м2 - 85.2 м2</span>
+                        </div>
+                        <div class="look-flat__box-item">
+                          <div class="look-flat__lil-title">Цена
+                          </div><span class="look-flat__value">10 256 280 руб.</span>
+                        </div>
+                      </div><a class="look-flat__item-btn btn btn_white simple-modal" href="#flat-modal-1">Подробнее о квартирах</a>
+                    </div>
+                  </div>
+                  <div class="look-flat__item"><a class="look-flat__img-block img-modal" href="img/works-big.jpg"><img src="img/works-small.jpg"><span class="look-flat__mask"></span>
+                    <svg class="loup">
+                      <use xlink:href="img/sprite.svg#loup"></use>
+                    </svg></a>
+                    <div class="look-flat__info-block">
+                      <div class="look-flat__item-title">дом №1
+                      </div>
+                      <div class="look-flat__box">
+                        <div class="look-flat__box-item">
+                          <div class="look-flat__lil-title">Площадь
+                          </div><span class="look-flat__value">65.2 м2 - 85.2 м2</span>
+                        </div>
+                        <div class="look-flat__box-item">
+                          <div class="look-flat__lil-title">Цена
+                          </div><span class="look-flat__value">10 256 280 руб.</span>
+                        </div>
+                      </div><a class="look-flat__item-btn btn btn_white simple-modal" href="#flat-modal-1">Подробнее о квартирах</a>
+                    </div>
+                  </div>
+                  <div class="look-flat__item"><a class="look-flat__img-block img-modal" href="img/works-big.jpg"><img src="img/works-small.jpg"><span class="look-flat__mask"></span>
+                    <svg class="loup">
+                      <use xlink:href="img/sprite.svg#loup"></use>
+                    </svg></a>
+                    <div class="look-flat__info-block">
+                      <div class="look-flat__item-title">дом №1
+                      </div>
+                      <div class="look-flat__box">
+                        <div class="look-flat__box-item">
+                          <div class="look-flat__lil-title">Площадь
+                          </div><span class="look-flat__value">65.2 м2 - 85.2 м2</span>
+                        </div>
+                        <div class="look-flat__box-item">
+                          <div class="look-flat__lil-title">Цена
+                          </div><span class="look-flat__value">10 256 280 руб.</span>
+                        </div>
+                      </div><a class="look-flat__item-btn btn btn_white simple-modal" href="#flat-modal-1">Подробнее о квартирах</a>
+                    </div>
+                  </div>
+            </div>
+          </div>
+          <div class="look-flat__cont" data-content-fade="3">
+            <div class="look-flat__block">
+                  <div class="look-flat__item"><a class="look-flat__img-block img-modal" href="img/works-big.jpg"><img src="img/works-small.jpg"><span class="look-flat__mask"></span>
+                    <svg class="loup">
+                      <use xlink:href="img/sprite.svg#loup"></use>
+                    </svg></a>
+                    <div class="look-flat__info-block">
+                      <div class="look-flat__item-title">дом №1
+                      </div>
+                      <div class="look-flat__box">
+                        <div class="look-flat__box-item">
+                          <div class="look-flat__lil-title">Площадь
+                          </div><span class="look-flat__value">65.2 м2 - 85.2 м2</span>
+                        </div>
+                        <div class="look-flat__box-item">
+                          <div class="look-flat__lil-title">Цена
+                          </div><span class="look-flat__value">10 256 280 руб.</span>
+                        </div>
+                      </div><a class="look-flat__item-btn btn btn_white simple-modal" href="#flat-modal-1">Подробнее о квартирах</a>
+                    </div>
+                  </div>
+                  <div class="look-flat__item"><a class="look-flat__img-block img-modal" href="img/works-big.jpg"><img src="img/works-small.jpg"><span class="look-flat__mask"></span>
+                    <svg class="loup">
+                      <use xlink:href="img/sprite.svg#loup"></use>
+                    </svg></a>
+                    <div class="look-flat__info-block">
+                      <div class="look-flat__item-title">дом №1
+                      </div>
+                      <div class="look-flat__box">
+                        <div class="look-flat__box-item">
+                          <div class="look-flat__lil-title">Площадь
+                          </div><span class="look-flat__value">65.2 м2 - 85.2 м2</span>
+                        </div>
+                        <div class="look-flat__box-item">
+                          <div class="look-flat__lil-title">Цена
+                          </div><span class="look-flat__value">10 256 280 руб.</span>
+                        </div>
+                      </div><a class="look-flat__item-btn btn btn_white simple-modal" href="#flat-modal-1">Подробнее о квартирах</a>
+                    </div>
+                  </div>
+                  <div class="look-flat__item"><a class="look-flat__img-block img-modal" href="img/works-big.jpg"><img src="img/works-small.jpg"><span class="look-flat__mask"></span>
+                    <svg class="loup">
+                      <use xlink:href="img/sprite.svg#loup"></use>
+                    </svg></a>
+                    <div class="look-flat__info-block">
+                      <div class="look-flat__item-title">дом №1
+                      </div>
+                      <div class="look-flat__box">
+                        <div class="look-flat__box-item">
+                          <div class="look-flat__lil-title">Площадь
+                          </div><span class="look-flat__value">65.2 м2 - 85.2 м2</span>
+                        </div>
+                        <div class="look-flat__box-item">
+                          <div class="look-flat__lil-title">Цена
+                          </div><span class="look-flat__value">10 256 280 руб.</span>
+                        </div>
+                      </div><a class="look-flat__item-btn btn btn_white simple-modal" href="#flat-modal-1">Подробнее о квартирах</a>
+                    </div>
+                  </div>
+            </div>
+          </div>
+          <div class="look-flat__cont" data-content-fade="4">
+            <div class="look-flat__block">
+                  <div class="look-flat__item"><a class="look-flat__img-block img-modal" href="img/works-big.jpg"><img src="img/works-small.jpg"><span class="look-flat__mask"></span>
+                    <svg class="loup">
+                      <use xlink:href="img/sprite.svg#loup"></use>
+                    </svg></a>
+                    <div class="look-flat__info-block">
+                      <div class="look-flat__item-title">дом №1
+                      </div>
+                      <div class="look-flat__box">
+                        <div class="look-flat__box-item">
+                          <div class="look-flat__lil-title">Площадь
+                          </div><span class="look-flat__value">65.2 м2 - 85.2 м2</span>
+                        </div>
+                        <div class="look-flat__box-item">
+                          <div class="look-flat__lil-title">Цена
+                          </div><span class="look-flat__value">10 256 280 руб.</span>
+                        </div>
+                      </div><a class="look-flat__item-btn btn btn_white simple-modal" href="#flat-modal-1">Подробнее о квартирах</a>
+                    </div>
+                  </div>
+                  <div class="look-flat__item"><a class="look-flat__img-block img-modal" href="img/works-big.jpg"><img src="img/works-small.jpg"><span class="look-flat__mask"></span>
+                    <svg class="loup">
+                      <use xlink:href="img/sprite.svg#loup"></use>
+                    </svg></a>
+                    <div class="look-flat__info-block">
+                      <div class="look-flat__item-title">дом №1
+                      </div>
+                      <div class="look-flat__box">
+                        <div class="look-flat__box-item">
+                          <div class="look-flat__lil-title">Площадь
+                          </div><span class="look-flat__value">65.2 м2 - 85.2 м2</span>
+                        </div>
+                        <div class="look-flat__box-item">
+                          <div class="look-flat__lil-title">Цена
+                          </div><span class="look-flat__value">10 256 280 руб.</span>
+                        </div>
+                      </div><a class="look-flat__item-btn btn btn_white simple-modal" href="#flat-modal-1">Подробнее о квартирах</a>
+                    </div>
+                  </div>
+                  <div class="look-flat__item"><a class="look-flat__img-block img-modal" href="img/works-big.jpg"><img src="img/works-small.jpg"><span class="look-flat__mask"></span>
+                    <svg class="loup">
+                      <use xlink:href="img/sprite.svg#loup"></use>
+                    </svg></a>
+                    <div class="look-flat__info-block">
+                      <div class="look-flat__item-title">дом №1
+                      </div>
+                      <div class="look-flat__box">
+                        <div class="look-flat__box-item">
+                          <div class="look-flat__lil-title">Площадь
+                          </div><span class="look-flat__value">65.2 м2 - 85.2 м2</span>
+                        </div>
+                        <div class="look-flat__box-item">
+                          <div class="look-flat__lil-title">Цена
+                          </div><span class="look-flat__value">10 256 280 руб.</span>
+                        </div>
+                      </div><a class="look-flat__item-btn btn btn_white simple-modal" href="#flat-modal-1">Подробнее о квартирах</a>
+                    </div>
+                  </div>
+            </div>
+          </div>
+          <div class="look-flat__cont" data-content-fade="5">
+            <div class="look-flat__block">
+                  <div class="look-flat__item"><a class="look-flat__img-block img-modal" href="img/works-big.jpg"><img src="img/works-small.jpg"><span class="look-flat__mask"></span>
+                    <svg class="loup">
+                      <use xlink:href="img/sprite.svg#loup"></use>
+                    </svg></a>
+                    <div class="look-flat__info-block">
+                      <div class="look-flat__item-title">дом №1
+                      </div>
+                      <div class="look-flat__box">
+                        <div class="look-flat__box-item">
+                          <div class="look-flat__lil-title">Площадь
+                          </div><span class="look-flat__value">65.2 м2 - 85.2 м2</span>
+                        </div>
+                        <div class="look-flat__box-item">
+                          <div class="look-flat__lil-title">Цена
+                          </div><span class="look-flat__value">10 256 280 руб.</span>
+                        </div>
+                      </div><a class="look-flat__item-btn btn btn_white simple-modal" href="#flat-modal-1">Подробнее о квартирах</a>
+                    </div>
+                  </div>
+                  <div class="look-flat__item"><a class="look-flat__img-block img-modal" href="img/works-big.jpg"><img src="img/works-small.jpg"><span class="look-flat__mask"></span>
+                    <svg class="loup">
+                      <use xlink:href="img/sprite.svg#loup"></use>
+                    </svg></a>
+                    <div class="look-flat__info-block">
+                      <div class="look-flat__item-title">дом №1
+                      </div>
+                      <div class="look-flat__box">
+                        <div class="look-flat__box-item">
+                          <div class="look-flat__lil-title">Площадь
+                          </div><span class="look-flat__value">65.2 м2 - 85.2 м2</span>
+                        </div>
+                        <div class="look-flat__box-item">
+                          <div class="look-flat__lil-title">Цена
+                          </div><span class="look-flat__value">10 256 280 руб.</span>
+                        </div>
+                      </div><a class="look-flat__item-btn btn btn_white simple-modal" href="#flat-modal-1">Подробнее о квартирах</a>
+                    </div>
+                  </div>
+                  <div class="look-flat__item"><a class="look-flat__img-block img-modal" href="img/works-big.jpg"><img src="img/works-small.jpg"><span class="look-flat__mask"></span>
+                    <svg class="loup">
+                      <use xlink:href="img/sprite.svg#loup"></use>
+                    </svg></a>
+                    <div class="look-flat__info-block">
+                      <div class="look-flat__item-title">дом №1
+                      </div>
+                      <div class="look-flat__box">
+                        <div class="look-flat__box-item">
+                          <div class="look-flat__lil-title">Площадь
+                          </div><span class="look-flat__value">65.2 м2 - 85.2 м2</span>
+                        </div>
+                        <div class="look-flat__box-item">
+                          <div class="look-flat__lil-title">Цена
+                          </div><span class="look-flat__value">10 256 280 руб.</span>
+                        </div>
+                      </div><a class="look-flat__item-btn btn btn_white simple-modal" href="#flat-modal-1">Подробнее о квартирах</a>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+        <div class="look-flat__text-bottom html">
+          <p>Повседневная практика показывает, что сложившаяся структура организации позволяет выполнять важные задания по разработке модели развития. Задача организации, в особенности же рамки и место обучения кадров позволяет выполнять важные задания по разработке существенных финансовых и административных условий.</p>
+          <p>Равным образом постоянный количественный рост и сфера нашей активности позволяет выполнять важные задания по разработке форм развития. Равным образом укрепление и развитие структуры позволяет оценить значение направлений прогрессивного развития. Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. Повседневная практика показывает, что укрепление и развитие структуры способствует подготовки и реализации новых предложений.</p>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="header in-footer">
+        <div class="header__wrp wrp">
+          <div class="header__logo-block"><a class="header__logo-link" href="/"><img class="header__img" src="img/logo-text.png" alt="" role="presentation"/><img class="header__img header__img_no-text" src="img/logo.png" alt="" role="presentation"/></a>
+          </div>
+          <div class="header__nav-block">
+            <div class="header-top">
+              <nav class="header-top__nav">
+                <ul class="header-top__list">
+                  <li class="header-top__item header-top__item_phone"><a href="tel:84232025009">8 (423) 202-50-09</a>
+                  </li>
+                  <li class="header-top__item header-top__item_link"><a href="about.html">О нас</a>
+                  </li>
+                  <li class="header-top__item header-top__item_link"><a href="ipoteka.html">Ипотека</a>
+                  </li>
+                  <li class="header-top__item header-top__item_link"><a href="shares.html">Акции</a>
+                  </li>
+                  <li class="header-top__item header-top__item_link"><a href="partners.html">Партнёры</a>
+                  </li>
+                  <li class="header-top__item header-top__item_link"><a href="questions.html">Вопрос-ответ</a>
+                  </li>
+                  <li class="header-top__item header-top__item_link"><a href="review-page.html">Отзывы</a>
+                  </li>
+                  <li class="header-top__item header-top__item_link"><a href="blog.html">Блог</a>
+                  </li>
+                  <li class="header-top__item header-top__item_link"><a href="news-page.html">Новости</a>
+                  </li>
+                  <li class="header-top__item header-top__item_link"><a href="contacts-page.html">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+              <ul class="header-top__list">
+                <li class="header-top__item header-top__item_social"><a href="#">
+                    <svg class="insta">
+                      <use xlink:href="img/sprite.svg#insta"></use>
+                    </svg></a>
+                </li>
+                <li class="header-top__item header-top__item_social"><a href="#">
+                    <svg class="fb">
+                      <use xlink:href="img/sprite.svg#fb"></use>
+                    </svg></a>
+                </li>
+                <li class="header-top__item header-top__item_social"><a href="#">
+                    <svg class="vk">
+                      <use xlink:href="img/sprite.svg#vk"></use>
+                    </svg></a>
+                </li>
+                <li class="header-top__item header-top__item_social"><a href="#">
+                    <svg class="ok">
+                      <use xlink:href="img/sprite.svg#ok"></use>
+                    </svg></a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-bottom">
+              <nav class="header-bottom__nav">
+                <ul class="header-bottom__list">
+                  <li class="header-bottom__item"><a href="about-fregat.html">О ЖК Фрегат</a>
+                  </li>
+                  <li class="header-bottom__item"><a href="look-flat.html">Посмотреть квартиры</a>
+                  </li>
+                  <li class="header-bottom__item"><a href="course-page.html">Ход строительства</a>
+                  </li>
+                  <li class="header-bottom__item"><a href="buy.html">Как купить</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__wrp wrp"><a class="footer__policy" href="privacy-policy.html">Политика конфиденциальности</a><a class="footer__markello" href="https://markello.ru/" target="_blank"><img class="footer__img" src="img/markello.png" alt="" role="presentation"/><span class="footer__text">made this love</span></a>
+        </div>
+      </div>
+    </footer>
+    <div class="look-flat-modal mfp-hide" id="flat-modal-1">
+      <div class="look-flat-modal__title-block">
+        <div class="look-flat-modal__title h2">Однокомнатные квартиры 65.2 м2   Дом №2
+        </div>
+        <div class="look-flat-modal__arrs arrs">
+          <div class="look-flat-modal__btn-prev"><img src="img/arr-prev.svg">
+          </div>
+          <div class="look-flat-modal__btn-next"><img src="img/arr-next.svg">
+          </div>
+        </div>
+      </div>
+      <div class="look-flat-modal__slider-block">
+        <div class="look-flat-modal__slider">
+          <div class="swiper-wrapper">
+                <div class="look-flat-modal__slide swiper-slide">
+                  <div class="look-flat-modal__cont">
+                    <figure class="look-flat-modal__img-block"><img src="img/works-small.jpg">
+                    </figure>
+                    <div class="look-flat-modal__info-block">
+                      <div class="look-flat-modal__top">
+                        <div class="look-flat-modal__small-img-block"><img src="img/works-small.jpg">
+                        </div>
+                        <div class="look-flat-modal__small-img-block"><img src="img/works-small.jpg">
+                        </div>
+                        <div class="look-flat-modal__small-img-block"><img src="img/works-small.jpg">
+                        </div>
+                        <div class="look-flat-modal__small-img-block"><img src="img/works-small.jpg">
+                        </div>
+                      </div>
+                      <div class="look-flat-modal__bottom">
+                        <ul class="look-flat-modal__list">
+                          <li class="look-flat-modal__item">
+                            <div class="look-flat-modal__lil-title">Цена
+                            </div><span class="look-flat-modal__value">29.1</span>
+                          </li>
+                          <li class="look-flat-modal__item">
+                            <div class="look-flat-modal__lil-title">Площадь
+                            </div><span class="look-flat-modal__value">14.7 м2</span>
+                          </li>
+                          <li class="look-flat-modal__item">
+                            <div class="look-flat-modal__lil-title">Цена
+                            </div><span class="look-flat-modal__value">29.1</span>
+                          </li>
+                          <li class="look-flat-modal__item">
+                            <div class="look-flat-modal__lil-title">Цена
+                            </div><span class="look-flat-modal__value">29.1</span>
+                          </li>
+                        </ul>
+                        <ul class="look-flat-modal__list">
+                          <li class="look-flat-modal__item">
+                            <div class="look-flat-modal__lil-title">Цена
+                            </div><span class="look-flat-modal__value">29.1</span>
+                          </li>
+                          <li class="look-flat-modal__item">
+                            <div class="look-flat-modal__lil-title">Площадь
+                            </div><span class="look-flat-modal__value">14.7 м2</span>
+                          </li>
+                          <li class="look-flat-modal__item">
+                            <div class="look-flat-modal__lil-title">Цена
+                            </div><span class="look-flat-modal__value">29.1</span>
+                          </li>
+                          <li class="look-flat-modal__item">
+                            <div class="look-flat-modal__lil-title">Цена
+                            </div><span class="look-flat-modal__value">29.1</span>
+                          </li>
+                        </ul><a class="look-flat-modal__about-btn" href="ipoteka.html">подробнее об ипотеке</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="look-flat-modal__slide swiper-slide">
+                  <div class="look-flat-modal__cont">
+                    <figure class="look-flat-modal__img-block"><img src="img/works-small.jpg">
+                    </figure>
+                    <div class="look-flat-modal__info-block">
+                      <div class="look-flat-modal__top">
+                        <div class="look-flat-modal__small-img-block"><img src="img/works-small.jpg">
+                        </div>
+                        <div class="look-flat-modal__small-img-block"><img src="img/works-small.jpg">
+                        </div>
+                        <div class="look-flat-modal__small-img-block"><img src="img/works-small.jpg">
+                        </div>
+                        <div class="look-flat-modal__small-img-block"><img src="img/works-small.jpg">
+                        </div>
+                      </div>
+                      <div class="look-flat-modal__bottom">
+                        <ul class="look-flat-modal__list">
+                          <li class="look-flat-modal__item">
+                            <div class="look-flat-modal__lil-title">Цена
+                            </div><span class="look-flat-modal__value">29.1</span>
+                          </li>
+                          <li class="look-flat-modal__item">
+                            <div class="look-flat-modal__lil-title">Площадь
+                            </div><span class="look-flat-modal__value">14.7 м2</span>
+                          </li>
+                          <li class="look-flat-modal__item">
+                            <div class="look-flat-modal__lil-title">Цена
+                            </div><span class="look-flat-modal__value">29.1</span>
+                          </li>
+                          <li class="look-flat-modal__item">
+                            <div class="look-flat-modal__lil-title">Цена
+                            </div><span class="look-flat-modal__value">29.1</span>
+                          </li>
+                        </ul>
+                        <ul class="look-flat-modal__list">
+                          <li class="look-flat-modal__item">
+                            <div class="look-flat-modal__lil-title">Цена
+                            </div><span class="look-flat-modal__value">29.1</span>
+                          </li>
+                          <li class="look-flat-modal__item">
+                            <div class="look-flat-modal__lil-title">Площадь
+                            </div><span class="look-flat-modal__value">14.7 м2</span>
+                          </li>
+                          <li class="look-flat-modal__item">
+                            <div class="look-flat-modal__lil-title">Цена
+                            </div><span class="look-flat-modal__value">29.1</span>
+                          </li>
+                          <li class="look-flat-modal__item">
+                            <div class="look-flat-modal__lil-title">Цена
+                            </div><span class="look-flat-modal__value">29.1</span>
+                          </li>
+                        </ul><a class="look-flat-modal__about-btn" href="ipoteka.html">подробнее об ипотеке</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </div>
+      <div class="look-flat-modal__form-block">
+        <div class="look-flat-modal__form-title h3">Успейте забронировать квартиру!
+        </div>
+        <form class="look-flat-modal__form contacts-page-form" data-url="/">
+          <div class="look-flat-modal__lev">
+            <input type="hidden" value="Свяжитесь с нами:"><input class="look-flat-modal__inp inp inp-text" type="text" name="Имя:" placeholder="Имя" autocomplete="off"/><input class="look-flat-modal__inp inp inputmask" type="text" name="Телефон:" placeholder="Телефон" autocomplete="off"/>
+            <button class="look-flat-modal__btn btn" type="submit">Отправить
+            </button>
+          </div>
+          <p class="look-flat-modal__callback-text"><sup>*</sup>Наш менеджер перезвонит вам в течение 2 минут и ответит на все вопросы
+          </p>
+        </form>
+      </div>
+    </div>
+    <!-- success modal-->
+    <div class="modal mfp-hide" id="success-popup">
+      <div class="success">
+        <div class="success__title h2">Спасибо!<br>Ваша заявка отправлена
+        </div><span class="success__text">Наш менеджер свяжется с вами<br>в ближайшее время</span>
+      </div>
+    </div>
+    <script src="js/vendors.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

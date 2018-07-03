@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Blog</title>
+    <meta content="" name="author">
+    <meta content="" name="description">
+    <!--base(target='_blank')-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="format-detection" content="telephone=no">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png"><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+    <link rel="stylesheet" href="css/vendors.min.css">
+    <link rel="stylesheet" href="css/app.min.css">
+  </head>
+  <body><!--[if lt IE 8]>
+    <p style="padding: 20px; position: fixed; background: #fff; font-size: 20px;">
+      Вы используете старую версию браузера.
+      Пожалуйста<a href="http://browsehappy.com/" style="padding: 0 5px; font-weight: bold; text-transform: uppercase; color: blue;" target="_self">обновите ваш браузер</a>перейдя по ссылке.
+    </p><![endif]--><span id="preloader"></span>
+    <header class="header col-sky">
+      <div class="header__wrp wrp">
+        <div class="header__logo-block"><a class="header__logo-link" href="/"><img class="header__img" src="img/logo-text.png" alt="" role="presentation"/><img class="header__img header__img_no-text" src="img/logo.png" alt="" role="presentation"/></a>
+        </div>
+        <div class="header__nav-block">
+          <div class="header-top">
+            <nav class="header-top__nav">
+              <ul class="header-top__list">
+                <li class="header-top__item header-top__item_phone"><a href="tel:84232025009">8 (423) 202-50-09</a>
+                </li>
+                <li class="header-top__item header-top__item_link"><a href="about.html">О нас</a>
+                </li>
+                <li class="header-top__item header-top__item_link"><a href="ipoteka.html">Ипотека</a>
+                </li>
+                <li class="header-top__item header-top__item_link"><a href="shares.html">Акции</a>
+                </li>
+                <li class="header-top__item header-top__item_link"><a href="partners.html">Партнёры</a>
+                </li>
+                <li class="header-top__item header-top__item_link"><a href="questions.html">Вопрос-ответ</a>
+                </li>
+                <li class="header-top__item header-top__item_link"><a href="review-page.html">Отзывы</a>
+                </li>
+                <li class="header-top__item header-top__item_link"><a href="blog.html">Блог</a>
+                </li>
+                <li class="header-top__item header-top__item_link"><a href="news-page.html">Новости</a>
+                </li>
+                <li class="header-top__item header-top__item_link"><a href="contacts-page.html">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="header-top__list">
+              <li class="header-top__item header-top__item_social"><a href="#">
+                  <svg class="insta">
+                    <use xlink:href="img/sprite.svg#insta"></use>
+                  </svg></a>
+              </li>
+              <li class="header-top__item header-top__item_social"><a href="#">
+                  <svg class="fb">
+                    <use xlink:href="img/sprite.svg#fb"></use>
+                  </svg></a>
+              </li>
+              <li class="header-top__item header-top__item_social"><a href="#">
+                  <svg class="vk">
+                    <use xlink:href="img/sprite.svg#vk"></use>
+                  </svg></a>
+              </li>
+              <li class="header-top__item header-top__item_social"><a href="#">
+                  <svg class="ok">
+                    <use xlink:href="img/sprite.svg#ok"></use>
+                  </svg></a>
+              </li>
+            </ul>
+          </div>
+          <div class="header-bottom">
+            <nav class="header-bottom__nav">
+              <ul class="header-bottom__list">
+                <li class="header-bottom__item"><a href="about-fregat.html">О ЖК Фрегат</a>
+                </li>
+                <li class="header-bottom__item"><a href="look-flat.html">Посмотреть квартиры</a>
+                </li>
+                <li class="header-bottom__item"><a href="course-page.html">Ход строительства</a>
+                </li>
+                <li class="header-bottom__item"><a href="buy.html">Как купить</a>
+                </li>
+                <li class="header-bottom__item header-bottom__item_phone"><a href="tel:84232025009">8 (423) 202-50-09</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="burger"><a class="burger__btn" id="burger-btn">
+          <div class="burger__lines-block"><span class="burger__mid-line"></span>
+          </div></a>
+        </div>
+        <div class="sidebar">
+          <div class="sidebar__cont">
+            <ul class="sidebar__list">
+              <li class="sidebar__li item"><a class="sidebar__link" href="/">Главная</a>
+              </li>
+              <li class="sidebar__li item"><a class="sidebar__link" href="about.html">О нас</a>
+              </li>
+              <li class="sidebar__li item"><a class="sidebar__link" href="ipoteka.html">Ипотека</a>
+              </li>
+              <li class="sidebar__li item"><a class="sidebar__link" href="shares.html">Акции</a>
+              </li>
+              <li class="sidebar__li item"><a class="sidebar__link" href="partners.html">Партнёры</a>
+              </li>
+              <li class="sidebar__li item"><a class="sidebar__link" href="questions.html">Вопрос-ответ</a>
+              </li>
+              <li class="sidebar__li item"><a class="sidebar__link" href="review-page.html">Отзывы</a>
+              </li>
+              <li class="sidebar__li item"><a class="sidebar__link" href="blog.html">Блог</a>
+              </li>
+              <li class="sidebar__li item"><a class="sidebar__link" href="news-page.html">Новости</a>
+              </li>
+              <li class="sidebar__li item"><a class="sidebar__link" href="contacts-page.html">Контакты</a>
+              </li>
+              <li class="sidebar__li item"><a class="sidebar__link" href="about-fregat.html">О ЖК Фрегат</a>
+              </li>
+              <li class="sidebar__li item"><a class="sidebar__link" href="look-flat.html">Посмотреть квартиры</a>
+              </li>
+              <li class="sidebar__li item"><a class="sidebar__link" href="course-page.html">Ход строительства</a>
+              </li>
+              <li class="sidebar__li item"><a class="sidebar__link" href="buy.html">Как купить</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="single-blog main" role="main">
+      <div class="single-blog__wrp wrp">
+        <div class="breadcrumbs"><a href="/">Главная</a><i>/</i><a href="blog.html">Блог</a><i>/</i><a>Новый корус в ЖК Фрегат 2 откроется</a>
+        </div>
+        <div class="single-blog__title h1">Новый корус в ЖК Фрегат 2 откроется
+        </div>
+        <div class="single-blog__cont">
+          <div class="single-blog__content-block">
+            <div class="single-blog__top">
+              <figure class="single-blog__top-img-block"><img src="img/works-big.jpg">
+              </figure>
+              <div class="single-blog__top-info">
+                <div class="single-blog__nums-block">
+                  <div class="single-blog__date">15 августа 2018
+                  </div>
+                  <div class="single-blog__nums-item">
+                    <svg class="eye">
+                      <use xlink:href="img/sprite.svg#eye"></use>
+                    </svg><span>34</span>
+                  </div>
+                  <div class="single-blog__nums-item">
+                    <svg class="clouds">
+                      <use xlink:href="img/sprite.svg#clouds"></use>
+                    </svg><span>34</span>
+                  </div>
+                </div><a class="single-blog__top-btn btn btn_white" href="#">поделиться</a>
+              </div>
+            </div>
+            <div class="single-blog__content html">
+              <p>ООО «Жилкапинвест» с 2004 года успешно работает на строительном рынке России и ближнего зарубежья и с самого начала зарекомендовала себя как стабильная, динамично развивающаяся компания, осуществляющая весь спектр строительных услуг. Накопленный в течение 12-ти лет опыт позволяет компании решать практически любые задачи в области организационно-технологического обеспечения, строительства на протяжении всего цикла работ. В своей деятельности ООО «Жилкапинвест» стремится к достижению лучших результатов как для клиентов и партнеров компании, так и для развития собственного бизнеса.<a>Для тех, кто не готов</a>ждать окончания ремонта и планирует заселение сразу.</p>
+              <blockquote>
+                <p>ООО «Жилкапинвест» с 2004 года успешно работает на строительном рынке России и ближнего зарубежья и с самого начала зарекомендовала себя как стабильная, динамично развивающаяся компания, осуществляющая весь спектр строительных услуг. Накопленный в течение 12-ти лет опыт позволяет компании решать практически любые задачи в области организационно-технологического обеспечения, строительства на протяжении всего цикла работ. В своей деятельности ООО «Жилкапинвест» стремится к достижению лучших результатов как для клиентов и партнеров компании, так и для развития собственного бизнеса.</p>
+                <div>АЛЕКСАНДР СТАРОСТИН</div><span>Психолог, инструктор по йоге</span>
+              </blockquote>
+            </div>
+            <div class="single-blog__content-title h2">Сроки строительства 1 неделя
+            </div>
+            <div class="single-blog__content html">
+              <p>Накопленный в течение 12-ти лет опыт позволяет компании решать практически любые задачи в области организационно-технологического обеспечения, строительства на протяжении всего цикла работ.</p>
+              <p>В своей деятельности ООО «Жилкапинвест» стремится к достижению лучших результатов как для клиентов и партнеров компании, так и для развития собственного бизнеса.</p>
+              <p>Для тех, кто не готов ждать окончания ремонта и планирует заселение сразу после ввода дома в эксплуатацию, в ЖК Фрегат 2 предусмотрены квартиры с готовой отделкой высококачественными материалами в современном стиле и в одном из двух цветовых вариантов. Вы можете посетить наш шоу-рум, чтобы ознакомится с качеством отделки.</p>
+              <ul>
+                <li>Это спальный район с развитой инфраструктурой.</li>
+                <li>Это спальный район с развитой инфраструктурой.</li>
+                <li>Это спальный район с развитой инфраструктурой.</li>
+              </ul>
+            </div>
+            <div class="single-blog__img-block"><img src="img/works-big.jpg">
+            </div>
+            <div class="single-blog__content-title h2">Сроки строительства 1 неделя
+            </div>
+            <div class="single-blog__content html">
+              <p>Накопленный в течение 12-ти лет опыт позволяет компании решать практически любые задачи в области организационно-технологического обеспечения, строительства на протяжении всего цикла работ.</p>
+              <table>
+                <tr>
+                  <th>text1</th>
+                  <th>text1</th>
+                  <th>text1</th>
+                </tr>
+                <tr>
+                  <td>text1</td>
+                  <td>text1 text1te text1text1 text1text1 table-layout: fixed text1te text1text1 text1text1 table-layout: fixed</td>
+                  <td>text1</td>
+                </tr>
+                <tr>
+                  <td>text1</td>
+                  <td>text1</td>
+                  <td>text1</td>
+                </tr>
+              </table>
+            </div><a class="single-blog__video-link play" href="https://www.youtube.com/watch?v=cUYSGojUuAU"><img src="img/works-big.jpg"><span class="single-blog__decor"></span><span class="single-blog__mask"></span></a>
+            <div class="single-blog__likes-block">
+              <div class="single-blog__likes-text-block"><span class="single-blog__likes-title h3">Вам была интересна эта статья?</span><a class="single-blog__likes-item">
+                <svg class="like">
+                  <use xlink:href="img/sprite.svg#like"></use>
+                </svg><span>34</span></a><a class="single-blog__likes-item single-blog__likes-item_dis">
+                <svg class="dislike">
+                  <use xlink:href="img/sprite.svg#dislike"></use>
+                </svg><span>0</span></a>
+              </div><a class="single-blog__likes-btn btn btn_white" href="#">поделиться</a>
+            </div>
+            <div class="single-blog__comment-block"><img src="img/comment.jpg">
+            </div>
+            <div class="single-blog__simular-block">
+              <div class="single-blog__simular-item"><a class="single-blog__link" href="single-blog.html">
+                <figure class="single-blog__img-block"><img src="img/works-big.jpg">
+                </figure>
+                <div class="single-blog__text-block">
+                  <div class="single-blog__lil-title">Задача организации, в особенности начало повседневной работы
+                  </div>
+                  <p class="single-blog__text">Задача организации, в особенности начало повседневной работы по формированию позиции в значительной степени ...
+                  </p>
+                  <div class="single-blog__bottom"><span class="single-blog__date">15 августа 2018</span>
+                    <div class="single-blog__nums-block">
+                      <div class="single-blog__nums-item">
+                        <svg class="eye">
+                          <use xlink:href="img/sprite.svg#eye"></use>
+                        </svg><span>34</span>
+                      </div>
+                      <div class="single-blog__nums-item">
+                        <svg class="clouds">
+                          <use xlink:href="img/sprite.svg#clouds"></use>
+                        </svg><span>34</span>
+                      </div>
+                    </div>
+                  </div>
+                </div></a>
+              </div>
+              <div class="single-blog__simular-item"><a class="single-blog__link" href="single-blog.html">
+                <figure class="single-blog__img-block"><img src="img/works-big.jpg">
+                </figure>
+                <div class="single-blog__text-block">
+                  <div class="single-blog__lil-title">Задача организации, в особенности начало повседневной работы
+                  </div>
+                  <p class="single-blog__text">Задача организации, в особенности начало повседневной работы по формированию позиции в значительной степени ...
+                  </p>
+                  <div class="single-blog__bottom"><span class="single-blog__date">15 августа 2018</span>
+                    <div class="single-blog__nums-block">
+                      <div class="single-blog__nums-item">
+                        <svg class="eye">
+                          <use xlink:href="img/sprite.svg#eye"></use>
+                        </svg><span>34</span>
+                      </div>
+                      <div class="single-blog__nums-item">
+                        <svg class="clouds">
+                          <use xlink:href="img/sprite.svg#clouds"></use>
+                        </svg><span>34</span>
+                      </div>
+                    </div>
+                  </div>
+                </div></a>
+              </div>
+            </div>
+          </div>
+          <div class="single-blog__side-block">
+            <div class="side-block">
+              <div class="side-block__socials">
+                <div class="side-block__socials-title h3">Читайте нас в социальных сетях!
+                </div>
+                <ul class="side-block__socials-list">
+                  <li class="side-block__socials-item"><a href="#">
+                      <svg class="insta">
+                        <use xlink:href="img/sprite.svg#insta"></use>
+                      </svg></a>
+                  </li>
+                  <li class="side-block__socials-item"><a href="#">
+                      <svg class="fb">
+                        <use xlink:href="img/sprite.svg#fb"></use>
+                      </svg></a>
+                  </li>
+                  <li class="side-block__socials-item"><a href="#">
+                      <svg class="vk">
+                        <use xlink:href="img/sprite.svg#vk"></use>
+                      </svg></a>
+                  </li>
+                  <li class="side-block__socials-item"><a href="#">
+                      <svg class="ok">
+                        <use xlink:href="img/sprite.svg#ok"></use>
+                      </svg></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="side-block__mail-form">
+                <div class="side-block__mail-title h3">Новости, события, полезные статьи
+                </div>
+                <form class="side-block__form form-mail" data-url="/">
+                  <input type="hidden" value="хочу быть в теме!"><input class="side-block__inp inp inp-text" type="email" name="Имя:" placeholder="Имя" autocomplete="off"/>
+                  <button class="side-block__btn btn" type="submit">хочу быть в теме!
+                  </button>
+                </form>
+              </div>
+              <div class="side-block__articles">
+                <div class="side-block__title h3">Популярные статьи
+                </div>
+                <ul class="side-block__list">
+                  <li class="side-block__item"><span class="side-block__date">15 августа 2018</span>
+                    <p class="side-block__text">Задача организации, в особенности же начало повседневной работы..
+                    </p>
+                  </li>
+                  <li class="side-block__item"><span class="side-block__date">15 августа 2018</span>
+                    <p class="side-block__text">Задача организации, в особенности же начало повседневной работы..
+                    </p>
+                  </li>
+                  <li class="side-block__item"><span class="side-block__date">15 августа 2018</span>
+                    <p class="side-block__text">Задача организации, в особенности же начало повседневной работы..
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="side-block__news">
+                <div class="side-block__title h3">Последние новости
+                </div>
+                <ul class="side-block__list">
+                  <li class="side-block__item"><span class="side-block__date">15 августа 2018</span>
+                    <div class="side-block__lil-title">Задача организации, в особенности начало...
+                    </div>
+                  </li>
+                  <li class="side-block__item"><span class="side-block__date">15 августа 2018</span>
+                    <div class="side-block__lil-title">Задача организации, в особенности начало...
+                    </div>
+                  </li>
+                  <li class="side-block__item"><span class="side-block__date">15 августа 2018</span>
+                    <div class="side-block__lil-title">Задача организации, в особенности начало...
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="header in-footer">
+        <div class="header__wrp wrp">
+          <div class="header__logo-block"><a class="header__logo-link" href="/"><img class="header__img" src="img/logo-text.png" alt="" role="presentation"/><img class="header__img header__img_no-text" src="img/logo.png" alt="" role="presentation"/></a>
+          </div>
+          <div class="header__nav-block">
+            <div class="header-top">
+              <nav class="header-top__nav">
+                <ul class="header-top__list">
+                  <li class="header-top__item header-top__item_phone"><a href="tel:84232025009">8 (423) 202-50-09</a>
+                  </li>
+                  <li class="header-top__item header-top__item_link"><a href="about.html">О нас</a>
+                  </li>
+                  <li class="header-top__item header-top__item_link"><a href="ipoteka.html">Ипотека</a>
+                  </li>
+                  <li class="header-top__item header-top__item_link"><a href="shares.html">Акции</a>
+                  </li>
+                  <li class="header-top__item header-top__item_link"><a href="partners.html">Партнёры</a>
+                  </li>
+                  <li class="header-top__item header-top__item_link"><a href="questions.html">Вопрос-ответ</a>
+                  </li>
+                  <li class="header-top__item header-top__item_link"><a href="review-page.html">Отзывы</a>
+                  </li>
+                  <li class="header-top__item header-top__item_link"><a href="blog.html">Блог</a>
+                  </li>
+                  <li class="header-top__item header-top__item_link"><a href="news-page.html">Новости</a>
+                  </li>
+                  <li class="header-top__item header-top__item_link"><a href="contacts-page.html">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+              <ul class="header-top__list">
+                <li class="header-top__item header-top__item_social"><a href="#">
+                    <svg class="insta">
+                      <use xlink:href="img/sprite.svg#insta"></use>
+                    </svg></a>
+                </li>
+                <li class="header-top__item header-top__item_social"><a href="#">
+                    <svg class="fb">
+                      <use xlink:href="img/sprite.svg#fb"></use>
+                    </svg></a>
+                </li>
+                <li class="header-top__item header-top__item_social"><a href="#">
+                    <svg class="vk">
+                      <use xlink:href="img/sprite.svg#vk"></use>
+                    </svg></a>
+                </li>
+                <li class="header-top__item header-top__item_social"><a href="#">
+                    <svg class="ok">
+                      <use xlink:href="img/sprite.svg#ok"></use>
+                    </svg></a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-bottom">
+              <nav class="header-bottom__nav">
+                <ul class="header-bottom__list">
+                  <li class="header-bottom__item"><a href="about-fregat.html">О ЖК Фрегат</a>
+                  </li>
+                  <li class="header-bottom__item"><a href="look-flat.html">Посмотреть квартиры</a>
+                  </li>
+                  <li class="header-bottom__item"><a href="course-page.html">Ход строительства</a>
+                  </li>
+                  <li class="header-bottom__item"><a href="buy.html">Как купить</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__wrp wrp"><a class="footer__policy" href="privacy-policy.html">Политика конфиденциальности</a><a class="footer__markello" href="https://markello.ru/" target="_blank"><img class="footer__img" src="img/markello.png" alt="" role="presentation"/><span class="footer__text">made this love</span></a>
+        </div>
+      </div>
+    </footer>
+    <!-- success modal-->
+    <div class="modal mfp-hide" id="success-popup">
+      <div class="success">
+        <div class="success__title h2">Спасибо!<br>Ваша заявка отправлена
+        </div><span class="success__text">Наш менеджер свяжется с вами<br>в ближайшее время</span>
+      </div>
+    </div>
+    <script src="js/vendors.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

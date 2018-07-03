@@ -1,0 +1,37 @@
+-
+     var headerNav = [
+         { "text": "Обо мне", "link": "about.html" },
+         { "text": "Контакты", "link": "contacts.html" }
+     ]
+
++b.HEADER.header
+    +e.wrp.wrp
+        +e.cont
+            +e.logo-block
+                +e.A.logo-link(href="/")
+                    +e.SPAN.logo-text Ernest Shelyag
+            +e.NAV.nav
+                each item in headerNav
+                    +e.A.nav-link(href=`${item.link}`)= item.text
+            +e.contacts-block
+                +e.UL.list
+                    +e.LI.item
+                        +e.A.link(href="https://github.com/ernestshelyag" title="Профиль на Github")
+                            +icon("github")
+                    +e.LI.item
+                        +e.A.link.modal-link(href="#skype" title="Мой Skype")
+                            +icon("skype")
+                    +e.LI.item
+                        +e.A.link(href="https://hh.ru/applicant/resumes/view?resume=660e5460ff058384460039ed1f523244563755" title="Резюме на Head Hunter")
+                            span.hh hh
+                    +e.LI.item
+                        +e.A.link.modal-link(href="#mail" title="Почта")
+                            +icon("mail")
+                    +e.LI.item
+                        +e.A.link(href="https://vk.com/eric.shelyag" title="Страница ВКонтакте")
+                            +icon("vk")
+                    +e.LI.item
+                        +e.A.link.modal-link(href="#phone" title="Позвонить")
+                            +icon("phone")
+
+

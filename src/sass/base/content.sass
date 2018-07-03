@@ -1,0 +1,102 @@
+.content
+  a
+    padding: 0 5px
+    color: $main-col
+    text-decoration: underline!important
+    &:hover
+      text-decoration: none!important
+    &:active
+      color: $main-col-dark
+      text-decoration: none!important
+
+  p
+    margin-bottom: 20px
+    &:last-child
+      margin-bottom: 0
+
+  ul
+    color: $main-col
+    line-height: 25px
+    font-weight: 600
+    li
+      font-weight: 400
+      line-height: normal
+      color: $font-col
+      margin: 0 0 12px 15px
+      +psevdo
+      &:before
+        width: 5px
+        height: 5px
+        border-radius: 50%
+        background: $main-col
+        top: 0
+        bottom: 0
+        left: -15px
+        margin: auto
+      &:last-child
+        margin: 0 0 0 15px
+
+  ol
+    list-style-type: none
+    counter-reset: num
+
+    li
+      position: relative
+      margin: 40px 0 10px
+      &:before
+        position: absolute
+        left: 0
+        top: -20px
+        content: counter(num) '. '
+        counter-increment: num
+        color: $main-col
+        font-size: 18px
+        font-weight: bold
+
+  //table
+  //  width: 100%
+  //  table-layout: fixed
+  //  text-align: center
+  //
+  //  th, td
+  //    padding: 25px 10px
+  //    border: solid 2px $sky-col-med
+  //    color: $font-col
+  //
+  //  th
+  //    background: $sky-col
+  //    color: $font-blue
+  //    font-weight: 600
+
+
+  blockquote
+    padding: 20px 0
+    p
+      font-style: italic
+      padding-left: 25px
+      +psevdo
+      &:before
+        height: 110%
+        width: 5px
+        border-radius: 2px
+        background: $main-col
+        left: 0
+        top: 50%
+        transform: translate(0, -50%)
+    div
+      text-transform: uppercase
+      color: $main-col
+      font-size: 18px
+      padding-left: 60px
+      position: relative
+      font-weight: 600
+      margin-bottom: 10px
+      &:before
+        position: absolute
+        content: '“'
+        font-size: 100px
+        color: $bg-filter
+        left: 10px
+        top: -18px
+    span
+      padding-left: 60px
