@@ -5,11 +5,11 @@
   position: relative
   height: 100vh
   margin-top: -50px
-  background-image: url("../img/bg.jpg")
+  background-image: url("../img/pizza.gif")
   +bg-center
   &__mask
     +absolute-cover
-    background: linear-gradient(to top,rgba(#333, .7), rgba(#000, .9))
+    background: linear-gradient(to top,rgba(#333, .7), rgba(#000, .6))
     z-index: 5
   &__cont
     +vcenter
@@ -46,9 +46,12 @@
 
   &__title
     text-align: center
+    color: #fff
+    font-weight: 400
+    text-transform: uppercase
   +r-pad(40)
   min-height: 100vh
-  background: #eee
+  background: #495a71
   &__arrs
     +flex
     width: 100px
@@ -90,11 +93,14 @@
         z-index: 10
 
 .about-me
-  background: #eee
+  background: #495a71
   +r-pad(0, 40)
   &__title
+    font-weight: 400
+    color: #fff
     text-align: center
-    margin-bottom: 40px
+    margin-bottom: 100px
+    text-transform: uppercase
   &__list
     width: 50%
     margin: auto
@@ -141,7 +147,7 @@
     &_php
       width: 5%
     &_vue
-      width: 30%
+      width: 50%
     &_react
       width: 20%
     &_gulp
